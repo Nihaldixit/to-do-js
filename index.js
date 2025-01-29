@@ -2,6 +2,7 @@ let task = document.getElementById("taskInput");
 let taskContainer = document.getElementById("taskContainer");
 function createTaskDiv() {
   let taskDiv = document.createElement("div");
+  taskDiv.setAttribute("class", "taskDiv");
   taskDiv.innerHTML = `
     <span>${task.value}</span>
     <button id="deleteButton" onclick="deleteTask(this)">Remove</button>`;
